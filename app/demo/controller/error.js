@@ -1,4 +1,4 @@
-exports.index = async function () {
+exports["404"] = async function () {
   await this.bindDefault();
 
   /**
@@ -9,7 +9,7 @@ exports.index = async function () {
    * 然后在 this.backData.repoInfo 中就可以拿到返回参数
    */
 
-  await this.render('home', {
-    title: 'Hello , Koa!'
+  await this.render('404', {
+    title: '頁面不存在'
   });
 }
